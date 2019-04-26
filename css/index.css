@@ -71,6 +71,11 @@ p {
     margin: 0 auto;
 }
 
+.about-page {
+    padding: 1%;
+    border-bottom: 1px dashed black;
+}
+
 #navbar {
     width: 100%;
     display: flex;
@@ -198,4 +203,50 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About page specific */
+
+#paragraph {
+    padding-bottom: 2%;
+    border-bottom: 1px dashed black;
+}
+
+.aboutFlexContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.aboutFlexContainer div {
+    width: 49%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 0 1% 0;
+    border-bottom: 1px dashed black;
+    margin: 1% 0 1% 0;
+}
+
+.aboutFlexContainer > div > p h1{
+    margin-top: 10px;
+}
+
+.aboutFlexContainer > div > button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 2%;
+}
+
+#aboutLast {
+    margin-top: 2%;
 }
