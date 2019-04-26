@@ -233,7 +233,7 @@ footer nav a {
     margin-top: 10px;
 }
 
-.aboutFlexContainer > div > button {
+.aboutFlexContainer > div > a > button {
     background-color: white;
     color: black;
     border: 2px solid black;
@@ -250,3 +250,62 @@ footer {
 #aboutLast {
     margin-top: 2%;
 }
+
+/* Stretch goals > Nav animations */
+
+@keyframes NavGradient {
+    from {color: black;}
+    to {color: gray;}
+}
+  
+nav a:hover {
+    animation-name: NavGradient;
+    animation-duration: .3s;
+    color: gray;
+}
+
+@keyframes ButtonGradient {
+    from {border: 2px solid black;
+        border-radius: 5px;}
+    to {border: 3px solid black;
+        border-radius: 20px;}
+}
+  
+.aboutFlexContainer > div > a > button:hover {
+    animation-name: ButtonGradient;
+    animation-duration: .3s;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.contact-section {
+    border-top: 1px dashed black;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+  }
+
+  textarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    border: 1px solid lightgray;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    
+  }
+  
+  input{
+    border: 1px solid lightgray;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
